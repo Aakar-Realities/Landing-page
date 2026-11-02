@@ -337,6 +337,7 @@ a:focus-visible {
 
 .inventory-preview,
 .tasks-preview,
+.hrms-preview,
 .vendors-preview,
 .cashflow-preview,
 .calendar-preview {
@@ -547,6 +548,77 @@ a:focus-visible {
   display: block;
   border-radius: inherit;
   background: linear-gradient(90deg, #24559b, #168fc4);
+}
+
+.hrms-preview {
+  max-width: 188px;
+  padding-bottom: 8px;
+}
+
+.employee-row {
+  min-height: 23px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 5px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #edf1f4;
+}
+
+.employee-row--last {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.employee-avatar {
+  width: 15px;
+  height: 15px;
+  flex: 0 0 15px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 5px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.employee-avatar--blue {
+  background: #518daf;
+}
+
+.employee-avatar--gray {
+  background: #77869a;
+}
+
+.employee-avatar--light {
+  color: #4a7591;
+  background: #d3e6ef;
+}
+
+.employee-row > span {
+  flex: 1;
+}
+
+.employee-row > span b,
+.employee-row > span em {
+  width: 48px;
+  height: 3px;
+  display: block;
+  border-radius: 3px;
+  background: #cbd9e3;
+}
+
+.employee-row > span em {
+  width: 31px;
+  height: 2px;
+  margin-top: 3px;
+  background: #e4ebf0;
+}
+
+.employee-row > small {
+  color: #39849a;
+  font-size: 5px;
 }
 
 .vendors-preview {

@@ -6,6 +6,7 @@ import {
   FileCheck2,
   FileSearch,
   Search,
+  UsersRound,
   Wallet,
 } from "lucide-react";
 
@@ -30,6 +31,13 @@ const tools = [
     url: "https://aakar-task.ai.studio",
     icon: ClipboardCheck,
     visual: "tasks",
+  },
+  {
+    name: "HRMS",
+    description: "Manage employee information and HR workflows.",
+    url: "https://aakar-hrms.ai.studio/",
+    icon: UsersRound,
+    visual: "hrms",
   },
   {
     name: "Vendor and Quote Analysis",
@@ -109,6 +117,26 @@ function ToolCard({ tool, index }) {
               <div className="task-line task-line--done"><i>✓</i><span /></div>
               <div className="task-line"><i /><span /></div>
               <div className="task-progress"><span /></div>
+            </div>
+          )}
+          {tool.visual === "hrms" && (
+            <div className="hrms-preview">
+              <div className="preview-heading"><span /> TEAM DIRECTORY</div>
+              <div className="employee-row">
+                <i className="employee-avatar employee-avatar--blue">AS</i>
+                <span><b /><em /></span>
+                <small>Active</small>
+              </div>
+              <div className="employee-row">
+                <i className="employee-avatar employee-avatar--gray">RK</i>
+                <span><b /><em /></span>
+                <small>Active</small>
+              </div>
+              <div className="employee-row employee-row--last">
+                <i className="employee-avatar employee-avatar--light">MP</i>
+                <span><b /><em /></span>
+                <small>Active</small>
+              </div>
             </div>
           )}
           {tool.visual === "vendors" && (
