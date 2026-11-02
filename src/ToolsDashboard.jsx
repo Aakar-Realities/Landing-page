@@ -1,9 +1,13 @@
 import {
   BellRing,
   Building2,
+  ChartNoAxesCombined,
   ClipboardCheck,
+  FileCheck2,
   FileSearch,
+  Search,
   UsersRound,
+  Wallet,
 } from "lucide-react";
 
 const tools = [
@@ -13,6 +17,12 @@ const tools = [
     url: "https://aakar-builderstore.ai.studio/",
     icon: Building2,
     visual: "inventory",
+  },
+  {
+    name: "PO vs Invoice",
+    description: "Compare purchase orders with invoices, side by side.",
+    url: "https://povsinvoice-comparator.ai.studio/",
+    icon: FileCheck2,
   },
   {
     name: "Task Management",
@@ -29,11 +39,29 @@ const tools = [
     visual: "hrms",
   },
   {
+    name: "Vendor and Quote Analysis",
+    description: "Review vendor proposals and find the right fit.",
+    url: "https://vendorandquotationanalysis.ai.studio",
+    icon: ChartNoAxesCombined,
+  },
+  {
     name: "Research Tool",
     description: "Bring research and useful insights into one place.",
     url: "https://researchdashboard.ai.studio",
     icon: FileSearch,
     visual: "research",
+  },
+  {
+    name: "Search Engine",
+    description: "Find the information you need across your workspace.",
+    url: "https://ai-search-os.ai.studio/",
+    icon: Search,
+  },
+  {
+    name: "Cashflow",
+    description: "Get a clearer view of cashflow and finances.",
+    url: "https://cashflowaakar.ai.studio/",
+    icon: Wallet,
   },
   {
     name: "E-Court Reminder Dashboard",
