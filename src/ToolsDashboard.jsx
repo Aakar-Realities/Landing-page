@@ -35,7 +35,7 @@ const tools = [
   {
     name: "HRMS",
     description: "Manage employee information and HR workflows.",
-    url: "https://aakar-hrms.ai.studio/",
+    url: "https://aakar-hrms-6587.ai.studio/",
     icon: UsersRound,
     visual: "hrms",
   },
