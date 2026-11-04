@@ -316,7 +316,8 @@ a:focus-visible {
 }
 
 .tool-visual--tasks,
-.tool-visual--research {
+.tool-visual--research,
+.tool-visual--mom {
   background:
     radial-gradient(ellipse at 50% 120%, rgba(70, 95, 137, 0.13), transparent 59%),
     linear-gradient(145deg, #f1f5f9, #e9eff6);
@@ -340,7 +341,8 @@ a:focus-visible {
 .hrms-preview,
 .vendors-preview,
 .cashflow-preview,
-.calendar-preview {
+.calendar-preview,
+.mom-preview {
   width: 100%;
   padding: 12px 13px;
   border: 1px solid rgba(255, 255, 255, 0.95);
@@ -548,6 +550,62 @@ a:focus-visible {
   display: block;
   border-radius: inherit;
   background: linear-gradient(90deg, #24559b, #168fc4);
+}
+
+.mom-preview {
+  max-width: 182px;
+}
+
+.mom-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 8px;
+}
+
+.mom-meta b {
+  color: #3e617d;
+  font-size: 7px;
+  font-weight: 700;
+}
+
+.mom-meta small {
+  color: #8793a0;
+  font-size: 6px;
+}
+
+.mom-line {
+  margin-top: 6px;
+}
+
+.mom-line span {
+  width: 90%;
+  height: 3px;
+  display: block;
+  border-radius: 3px;
+  background: #dce5ec;
+}
+
+.mom-line--short span {
+  width: 62%;
+}
+
+.mom-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 9px;
+  padding: 3px 6px;
+  border: 1px solid #d3e6f1;
+  border-radius: 4px;
+  color: #168fc4;
+  background: #f1f8fc;
+  font-size: 6px;
+  font-weight: 700;
+}
+
+.mom-action i {
+  font-style: normal;
 }
 
 .hrms-preview {

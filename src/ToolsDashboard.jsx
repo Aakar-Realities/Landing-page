@@ -5,6 +5,7 @@ import {
   ClipboardCheck,
   FileCheck2,
   FileSearch,
+  NotebookPen,
   Search,
   UsersRound,
   Wallet,
@@ -73,6 +74,13 @@ const tools = [
     url: "https://lexicislegal.ai.studio/",
     icon: BellRing,
     visual: "reminders",
+  },
+  {
+    name: "MOM Creator",
+    description: "Turn meetings into clear minutes and action items.",
+    url: "https://samvadini-mom-creator-ij2i.vercel.app",
+    icon: NotebookPen,
+    visual: "mom",
   },
 ];
 
@@ -184,6 +192,15 @@ function ToolCard({ tool, index }) {
               <div className="calendar-event-label"><span /> Hearing · 10:30 AM</div>
             </div>
           )}
+          {tool.visual === "mom" && (
+            <div className="mom-preview">
+              <div className="preview-heading"><span /> MINUTES OF MEETING</div>
+              <div className="mom-meta"><b>Site review</b><small>4 attendees</small></div>
+              <div className="mom-line"><span /></div>
+              <div className="mom-line mom-line--short"><span /></div>
+              <div className="mom-action"><i>→</i> 3 action items</div>
+            </div>
+          )}
         </div>
         <span className="visual-icon-badge" aria-hidden="true">
           <Icon size={15} strokeWidth={1.8} />
@@ -250,7 +267,7 @@ function App() {
               <h2 id="tools-title">Explore your tools</h2>
             </div>
             <span className="tools-count">
-              <span>0{tools.length}</span> applications
+              <span>{String(tools.length).padStart(2, "0")}</span> applications
             </span>
           </div>
           <div className="tools-grid">
